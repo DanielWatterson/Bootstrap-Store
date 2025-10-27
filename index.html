@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
+    <title>Home Page - Steampunk Collection</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -27,8 +27,12 @@
   </head>
   <!-- Body; Fades in slowly with the H1 fading in afterwards.-->
   <body
-    class="bg-light animate__animated animate__fadeIn"
-    style="--animate-duration: 3s"
+    class="animate__animated animate__fadeIn"
+    style="
+      --animate-duration: 3s;
+      background: linear-gradient(135deg, #f0e6d2, #d4c3a8, #c8b591);
+      min-height: 100vh;
+    "
   >
     <div
       class="p-3 text-white rounded-3"
@@ -64,7 +68,7 @@
               >
               <a class="nav-link" href="products.html">Products</a>
               <a class="nav-link" href="contact.html">Contact</a>
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              <a class="nav-link" href="about.html">About Us</a>
             </div>
           </div>
         </div>
@@ -86,15 +90,44 @@
       </div>
     </section>
 
-    <div class="card" style="width: 18rem">
-      <img src="https://i.postimg.cc/NFRkbsZc/3-main-punk-rave-women39s-gothic-lolita-puff-long-sleeved-black-short-coat-party-club-halloween-jack.webp" class="card-img-top" alt="Gothic Lolita Coat" />
-      <div class="card-body">
-        <p class="card-text">
-          Fashion makes a statement, and this divine Coat is no exception.
-          Don't forget darlings, the magic of the Steampunk is here.
-        </p>
+        <!-- The Gentleman Image -->
+    <section class="container my-5">
+      <div class="row justify-content-center g-4">
+        <!-- Guy Image -->
+        <div class="col-12 col-md-6">
+          <div class="card">
+            <img
+              src="https://i.postimg.cc/0yyxyBsm/373d0bd80cee2ce6230eb754def9045a.jpg"
+              class="card-img-top"
+              alt="Steampunk Gentleman"
+            />
+            <div class="card-body text-center">
+              <p class="card-text">
+                The Gentleman, 
+                The clockwork, gears, mechanisms and steam is his craft.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- The Lady Image -->
+        <div class="col-12 col-md-6">
+          <div class="card">
+            <img
+              src="https://i.postimg.cc/8c4gmRS2/6f2edabfd647369ef40f7d8c6a18c54e.jpg"
+              class="card-img-top"
+              alt="Steampunk Lady"
+            />
+            <div class="card-body text-center">
+              <p class="card-text">
+                The Lady, blending elegance with the charm of Steampunk
+                fashion.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
     <footer
       class="bg-dark text-white text-center py-3 mt-5 border-top border-3 border-dark"

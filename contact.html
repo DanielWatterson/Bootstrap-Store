@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Steampunk Collection</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -26,8 +27,12 @@
     <title>Contact Page</title>
   </head>
   <body
-    class="bg-light animate__animated animate__fadeIn"
-    style="--animate-duration: 3s"
+    class="animate__animated animate__fadeIn"
+    style="
+      --animate-duration: 3s;
+      background: linear-gradient(135deg, #f0e6d2, #d4c3a8, #c8b591);
+      min-height: 100vh;
+    "
   >
     <div
       class="p-3 text-white rounded-3"
@@ -63,8 +68,8 @@
                 >Home</a
               >
               <a class="nav-link" href="products.html">Products</a>
-              <a class="nav-link" href="contact.html">Contact</a>
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              <a class="nav-link" href="contact.html">Contact</a> 
+              <a class="nav-link" href="about.html">About Us</a>
             </div>
           </div>
         </div>
@@ -72,6 +77,48 @@
     </div>
 </head>
 <body>
+<br>
+      <section class="5">
+      <div
+        class="container col-md-8 mx-auto p-5 rounded shadow text-center"
+        style="background: linear-gradient(145deg, #f5e4d7, #e0cda9)"
+      >
+        <p class="fs-5" style="font-family: 'Oxanium', cursive">
+          Your feedback is very important to us. Please fill out the form below.
+          If you require our assistance, we will happily assist you, but remember darlings,
+          we are quite busy but this does not mean you aren't within our sights.
+        </p>
+      </div>
+    </section>
+
+  <section class="container" style="margin-top: 2rem;">
+  <form>
+  <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">Worry not, friend. Your information is under lock-and-key</div>
+  </div>
+  <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Urgent Enquiry (This is meant for dangerous situations) </label>
+  </div>
+    <div class="mb-3">
+    <label for="enquiryType" class="form-label">Type of Enquiry</label>
+    <select class="form-select" id="enquiryType">
+      <option selected>Select your enquiry</option>
+      <option value="product">Product Information</option>
+      <option value="order">Order Status</option>
+      <option value="support">Technical Support</option>
+      <option value="other">Other</option>
+    </select>
+  </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</section>
 
     <footer
       class="bg-dark text-white text-center py-3 mt-5 border-top border-3 border-dark-subtle"
